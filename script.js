@@ -1,71 +1,57 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let tabButtons = document.querySelectorAll(".tab-btn");
-    let projectCards = document.querySelectorAll(".project-card");
-
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+  
     function filterProjects(category) {
-        projectCards.forEach(card => {
-            if (card.dataset.category === category) {
-                card.classList.add("active");
-            } else {
-                card.classList.remove("active");
-            }
-        });
-    }
-
-    // Activer par défaut "Projets Web"
-    filterProjects("web");
-
-    tabButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            let category = this.dataset.tab;
-
-            // Mettre à jour les boutons actifs
-            tabButtons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            // Filtrer les projets
-            filterProjects(category);
-        });
-    });
-
-    // Gestion de la modale
-    let modal = document.getElementById("project-modal");
-    let modalTitle = document.getElementById("modal-title");
-    let modalImage = document.getElementById("modal-image");
-    let modalDescription = document.getElementById("modal-description");
-    let modalLink = document.getElementById("modal-link");
-    let closeModal = document.querySelector(".close-modal");
-
-    function openModal(title, image, description, link) {
-        modalTitle.textContent = title;
-        modalImage.src = image;
-        modalDescription.textContent = description;
-        modalLink.href = link;
-        modalLink.style.display = link ? "inline-block" : "none"; 
-        modal.style.display = "flex";
-    }
-
-    // Ouvrir la modale au clic sur "Détails"
-    document.querySelectorAll(".details-btn").forEach(button => {
-        button.addEventListener("click", function (event) {
-            event.stopPropagation(); 
-            let projectCard = this.closest(".project-card");
-            let title = projectCard.dataset.title;
-            let image = projectCard.dataset.image;
-            let description = projectCard.dataset.description;
-            let link = projectCard.dataset.link || "#"; 
-            openModal(title, image, description, link);
-        });
-    });
-
-    // Fermer la modale
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
+      projectCards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.classList.add("active");
+        } else {
+          card.classList.remove("active");
         }
+      });
+    }
+  
+    // Afficher par défaut les projets Web
+    filterProjects("web");
+  
+    tabButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+  
+        const category = this.dataset.tab;
+        filterProjects(category);
+      });
     });
-});
+  
+    // Gestion de la modale
+    const modal = document.getElementById("project-modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalImage = document.getElementById("modal-image");
+    const modalDescription = document.getElementById("modal-description");
+    const modalLink = document.getElementById("modal-link");
+    const closeModal = document.querySelector(".close-modal");
+  
+    function openModal(title, image, description, link) {
+      modalTitle.textContent = title;
+      modalImage.src = image;
+      modalDescription.textContent = description;
+      modalLink.href = link;
+      modal.style.display = "flex";
+    }
+  
+    document.querySelectorAll(".details-btn").forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.stopPropagation();
+        const card = this.closest(".project-card");
+        openModal(card.dataset.title, card.dataset.image, card.dataset.description, card.dataset.link || "#");
+      });
+    });
+  
+    closeModal.addEventListener("click", () => modal.style.display = "none");
+    window.addEventListener("click", e => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  });
+  
