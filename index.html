@@ -1,69 +1,83 @@
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Website</title>  
-        <script src="script.js"></script>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>  
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
 
-        <link rel="stylesheet" href ="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
+<header class="header">
+    <a href="#home" class="logo">Edy <span>Florvil</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#bts">BTS SIO</a>
+        <a href="#education">Formation</a>
+        <a href="#services">Expériences</a>
+        <a href="#projects">Projets</a>
+        <a href="#veille">Veille techno</a>
+        
+    </nav>
+</header>
 
-        <header class="header">
-            <a href="#home" class="logo">Edy
-                <span>Florvil</span></a>
+<section class="home" id="home">
+    <div class="homme-content">
+        <h3 class="text-animation"><span></span></h3><br>
+        Je suis <strong>Edy Florvil</strong>, étudiant en 2<sup>e</sup> année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) au lycée Parc de Vilgénis à Massy.
+    </p>
+    <p>
+        Tout au long de ma formation, j’ai appris à concevoir, développer et maintenir des applications modernes, fonctionnelles et adaptées aux besoins réels des utilisateurs. J’ai mené plusieurs projets en autonomie ou en équipe, en utilisant des technologies variées du web et du développement logiciel.
+    </p>
+    <p>
+        Mes compétences principales incluent : HTML, CSS, JavaScript, PHP, SQL, Python et C#. Je maîtrise également la gestion de bases de données relationnelles, la modélisation (MCD/MLD) et la structuration de projets.
+    </p>
+    <p>
+        Curieux, rigoureux, autonome et passionné par les technologies, je suis toujours prêt à relever de nouveaux défis dans le domaine du développement informatique.
+    </p>
 
-                
-                <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/edy-florvil-ab7647287/"><i class='bx bxl-linkedin'></i></a>
+           
+        </div>
+        <div class="btn-group">
+            <a href="./CV Florvil_Edy.pdf" download="CV Florvil Edy" class="btn">CV</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </div>
+    <div class="homme-img">
+        <img src="pic 3.PNG" alt="">
+    </div>
+</section>
+<section id="bts" class="bts-section" style="padding: 8rem 10% 5rem;">
+    <h2 class="heading">Mon <span>BTS SIO</span></h2>
 
-                <nav class="navbar">
-                    <a href="#home" class="active">Home</a>
-                    <a href="#education">Education</a>
-                    <a href="#services">Experiences</a>
-                    <a href="#testimonials">Projet</a>
-                    <a href="#contact">Veille techno</a>
+    <p style="font-size: 1.8rem; max-width: 1100px; margin: 2rem auto; line-height: 1.8;">
+        Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> est un diplôme en deux ans destiné à former des professionnels capables de gérer des projets informatiques, de développer des applications, ou d’administrer des systèmes et des réseaux. Cette formation s’adresse aux passionnés de technologie souhaitant intégrer rapidement le marché du travail ou poursuivre leurs études.
+    </p>
 
-                </nav>
-        </header>
-        <section class="home" id="home">
-            <div class="homme-content">
-                <h1>Bonjour c'est <span>Edy</span></h1><br>
-                <h3 class="text-animation">Je suis <span></span></h3><br>
-                
-               <br> <h2>
-                    <p>Je m’intéresse au développement web et logiciel, et j’ai acquis des compétences solides en conception d’applications.<br>
-                        <br> Mon objectif est de créer des solutions efficaces et optimisées en respectant les bonnes pratiques du domaine.</p>
-                    <br>
-                    <p>Au cours de ma formation, j’ai travaillé sur plusieurs projets qui m’ont permis de développer mes compétences en programmation, gestion de bases de données et optimisation des performances.</p>
-                    <br>
-                    <p>J’apprécie relever des défis techniques et je cherche toujours à améliorer mes connaissances.</p>
-                    <br>
-                    <p>Mon objectif est de continuer à évoluer dans le développement et d’apporter des solutions adaptées aux projets sur lesquels je travaille.
+    <div class="bts-options" style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center; margin-top: 5rem;">
+        <!-- SLAM -->
+        <div class="bts-card" style="flex: 1 1 400px; background-color: var(--second-bg-color); padding: 3rem; border-radius: 2rem; border: 2px solid var(--main-color);">
+            <h3 style="font-size: 2.8rem; color: var(--main-color); margin-bottom: 1.5rem;"> 💻Option SLAM</h3>
+            <p style="font-size: 1.6rem; color: white; line-height: 1.7;">
+                L’option <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong> forme à la conception et au développement de programmes, sites web, applications mobiles et à la gestion de bases de données. Les étudiants apprennent à coder, tester, déployer et maintenir des solutions numériques sur mesure.
+            </p>
+        </div>
 
-                    </p>
-                </h2>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/edy-florvil-ab7647287/"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.instagram.com/badr__nh/?igsh=MW9wNm5mamJsZ2ZteA%3D%3D"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/NhBadr"><i class='bx bxl-twitter' ></i></a>
-                    
-                </div>
-                <div class="btn-group">
-                    <a href="./CV Florvil_Edy.pdf" download="CV Florvil Edy" class="btn">CV</a>
-                    <a href="#contact"
-                    class="btn">Contact</a>
-                </div>
-            </div>
-                <div class="homme-img">
-                    <img src="pic 3.PNG" alt="">
-                </div>
-            
-
-        </section>
+        <!-- SISR -->
+        <div class="bts-card" style="flex: 1 1 400px; background-color: var(--second-bg-color); padding: 3rem; border-radius: 2rem; border: 2px solid var(--main-color);">
+            <h3 style="font-size: 2.8rem; color: var(--main-color); margin-bottom: 1.5rem;"> 🔐 Option SISR</h3>
+            <p style="font-size: 1.6rem; color: white; line-height: 1.7;">
+                L’option <strong>SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong> prépare aux métiers de l’administration réseau et de la cybersécurité. Elle enseigne la configuration de serveurs, le déploiement de systèmes, la gestion des droits utilisateurs, et le maintien de la sécurité informatique.
+            </p>
+        </div>
+    </div>
+</section>
 
         <section class="education" id="education">
            <h2 class="heading">Education</h2> 
@@ -114,85 +128,7 @@
 
            </div>
         </section>
-<!--
-        <section class="services" id="services">
-            <h2 class="heading">Experiences</h2>
 
-            <div class="services-container">
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>Développeur/Analyste Chez osezlecentreville</h4>
-                        <h1>- Développement des sites web WordPress, Shopify.</h1>
-                        <h1>- Développement et adaptation de thèmes WordPress.</h1>
-                        <h1>- Optimisation des performances avec la mise en cache.</h1>
-                        <h1>- Gestion avancée des bases de données avec HyperDB.</h1>
-                        <h1>- Amélioration du référencement avec Yoast SEO.</h1>
-                        <h1>- Création des interfaces fonctionnelles des plateformes.</h1>
-                        <h1>- Garantir le bon respect des cahiers des charges.</h1>
-                        
-                    </div>
-                    <div class="ozimg">
-                        <img src="ozimg.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>Développeur / Analyste Chez Acatium France</h4>
-                        <h1>- Développement d’un outil de saisie de CRA avec la génération des factures.</h1>
-                        <h1>- Déploiement de l’outil dans Cloud Amazon.</h1>
-                        <h1>- Gestion d’accès et connexion à l’URL de plateforme.</h1>
-                        <h1>- Garantir le bon respect des cahiers des charges.</h1>
-                    </div>
-                    <div class="ozimg">
-                        <img src="aca.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div class="service-box">
-                    <div class="service-info">
-                        
-                        <h4>Développeur Chez SDFM LOGISTICS.</h4>
-                        <h1>- Développement d’une application web et mobile gestion de parc.</h1>
-                        <h1>- Mise en place du système de messagerie et webconférence en temps réel.</h1>
-                        <h1>- Diriger l'analyse, la conception et l'élaboration du cadre de l’application.</h1>
-                    </div>
-                    <div class="ozimg">
-                        <img src="sdfm.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>Développeur logicielle Chez Delphi APTIV</h4>
-                        <h1>- Développement d’une application de Gestion de ressources humaines.</h1>
-                        <h1>- Apporter un support technique et une assistance aux utilisateurs.</h1>
-                        <h1>- Informer et documenter l’évolution du développement.</h1>
-                    </div>
-                    <div class="ozimg">
-                        <img src="delphi.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>Développeur logiciel Chez Groupe ALTEN</h4>
-                        <h1>- Analyser et documenter les spécifications logicielles.</h1>
-                        <h1>- Développer des applications et des fonctionnalités Frontend (Angular).</h1>
-                        <h1>- Suivre un processus de développement agile et itératif.</h1>
-                    </div>
-                    <div class="ozimg">
-                        <img src="alten.png" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        -->
         <section class="education" id="services">
             <h2 class="heading">Mon <span>Expériences</span></h2>
         
@@ -282,106 +218,121 @@
          </section>
 
 
-
          <section id="projects" class="projects-section">
             <h2 class="section-title">Mes Projets</h2>
-            <button class="tab-btn active" data-tab="web-projects">Projets Web</button>
-<button class="tab-btn" data-tab="csharp-projects">Projets C#</button>
+        
+            <div class="projects-grid">
+                <!-- Projet Web 1 -->
+                <div class="project-card" data-title="Gacti" data-image="images/gacti.jpg" data-description="Un site de gestion d'activités sportives et culturelles..." data-link="https://monprojet-gacti.com" data-details="gacti.html">
+                    <img src="gacti.png" alt="Gacti">
+                    <div class="overlay">
+                        <h3>Gacti</h3>
+                        <div class="buttons">
+                            <p>Un site de gestion d'activités sportives et culturelles. Gestion des utilisateurs, inscriptions, animations, etc.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet Web 2 -->
+                <div class="project-card" data-title="Gestion d'un Zoo" data-image="images/zoo.jpg" data-description="Application de gestion d'un zoo..." data-link="https://monprojet-zoo.com" data-details="zoo.html">
+                    <img src="zoo.png" alt="Gestion d'un Zoo">
+                    <div class="overlay">
+                        <h3>Gestion d'un Zoo</h3>
+                        <div class="buttons">
+                           <p>Ce projet permet de gérer les informations d’un zoo : liste des animaux, alimentation, habitats... Il utilise HTML, CSS, PHP et MySQL avec une interface simple pour les employés.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Projet Web 3 -->
+                <div class="project-card" data-title="Site web d'un club de foot" data-image="images/club-foot.jpg" data-description="Application web pour une équipe de foot..." data-link="https://monprojet-clubfoot.com" data-details="clubfoot.html">
+                    <img src="ssg.png" alt="Site web d'un club de foot">
+                    <div class="overlay">
+                        <h3>Site web d'un club de foot</h3>
+                        <div class="buttons">
+                            <p>Application web dynamique pour une équipe de football amateur : actualités, boutique, événements, membres.</p>
+                        </div>
+                    </div>
+                </div>
+          <!-- Projet Gestion Billetterie -->
+    <div class="project-card">
+        <img src="stade.jpg" alt="Projet Billetterie">
+        <div class="overlay">
+            <h3>Gestion de Billetterie</h3>
+            <p>Application complète pour la gestion des événements sportifs avec réservation, paiement, et scan des billets.</p>
+           
+        </div>
+    </div>
 
+    <!-- Projet API News -->
+    <div class="project-card">
+        <img src="api.png" alt="API News">
+        <div class="overlay">
+            <h3>API News Recherche</h3>
+            <p>Application connectée à une API d’actualités permettant de rechercher des articles en temps réel par mot-clé.</p>
+            
+            </div>
+        </div>
+    </div>
+            </div>
+        </section>
+        
+        
+        
 
-            
-                <div class="projects-grid">
-                    <div class="project-card" data-title="Gacti" data-image="images/gacti.jpg" data-description="Un site de gestion d'activités sportives et culturelles..." data-link="https://monprojet-gacti.com" data-details="gacti.html">
-                        <img src="gacti.png" alt="Gacti">
-                        <div class="overlay">
-                            <h3>Gacti</h3>
-                            <div class="buttons">
-                                <button class="btn details-btn">Détails</button>
-                                <a href="gacti.html" class="btn see-more-btn" target="_blank">Voir plus</a>
-                            </div>
-                        </div>
+            <section class="veille-techno" id="veille">
+                <h2 class="heading">Veille <span>Technologique</span> : La data dans le football</h2>
+                <p class="intro">
+                    Cette veille s’appuie sur des agrégateurs comme Feedly et Google News, avec des sources spécialisées telles que : 
+                    <strong>Stats Perform</strong>, <strong>L’Équipe</strong>, <strong>SoFoot</strong>, <strong>Football365</strong>, 
+                    <strong>FBref</strong>, <strong>Deux-Zéro</strong> et <strong>Statista</strong>. Elle met en lumière les usages 
+                    actuels des données dans le football, du niveau professionnel à l'amateur.
+                </p>
+               <center> <iframe id="sofa-player-embed-979128" src="https://widgets.sofascore.com/fr/embed/player/979128?widgetTheme=light" style=height:800px!important;max-width:500px!important;width:100%!important;
+                frameborder="0" scrolling="no"></iframe></center>
+                <div class="veille-grid">
+                    <div class="veille-box">
+                        <h3>Analyse de performance</h3>
+                        <p>Des plateformes comme SofaScore ou FBref permettent de consulter les statistiques avancées des joueurs : 
+                        <em>xG</em>, <em>tirs</em>, <em>passes clés</em>… Ces données aident les clubs à ajuster leurs stratégies de jeu.</p>
+                       
                     </div>
             
-                    <div class="project-card" data-title="Gestion d'un Zoo" data-image="images/zoo.jpg" data-description="Application de gestion d'un zoo..." data-link="https://monprojet-zoo.com" data-details="zoo.html">
-                        <img src="zoo.png" alt="Gestion d'un Zoo">
-                        <div class="overlay">
-                            <h3>Gestion d'un Zoo</h3>
-                            <div class="buttons">
-                                <button class="btn details-btn">Détails</button>
-                                <a href="zoo.html" class="btn see-more-btn" target="_blank">Voir plus</a>
-                            </div>
-                        </div>
+                    <div class="veille-box">
+                        <h3>Radars de performance</h3>
+                        <p>Les radars statistiques permettent de visualiser rapidement les points forts d’un joueur sur plusieurs critères 
+                        (passes, tirs, dribbles, etc.).</p>
+                        
                     </div>
             
-                    <div class="project-card" data-title="Site web d'un club de foot" data-image="images/club-foot.jpg" data-description="Application web pour une équipe de foot..." data-link="https://monprojet-clubfoot.com" data-details="clubfoot.html">
-                        <img src="ssg.png" alt="Site web d'un club de foot">
-                        <div class="overlay">
-                            <h3>Site web d'un club de foot</h3>
-                            <div class="buttons">
-                                <button class="btn details-btn">Détails</button>
-                                <a href="clubfoot.html" class="btn see-more-btn" target="_blank">Voir plus</a>
-                            </div>
-                        </div>
+                    <div class="veille-box">
+                        <h3>Utilisation des GPS</h3>
+                        <p>Certains clubs utilisent des capteurs GPS pour suivre la distance parcourue, la vitesse et la charge physique 
+                        des joueurs à l’entraînement.</p>
+                       
                     </div>
-                    
+            
+                    <div class="veille-box">
+                        <h3>Recrutement & valorisation</h3>
+                        <p>Grâce aux données de performance, les clubs peuvent repérer des <strong>talents sous-côtés</strong> ou 
+                        <strong>valoriser leurs joueurs</strong> de manière plus objective pour les transferts.</p>
+                    </div>
+            
+                    <div class="veille-box">
+                        <h3>Fan experience</h3>
+                        <p>Des plateformes comme <strong>Deux-Zéro</strong> permettent au public d’avoir accès à des données enrichies 
+                        et de mieux comprendre les performances de leur club.</p>
+                    </div>
+            
+                    <div class="veille-box">
+                        <h3>Football amateur & open data</h3>
+                        <p>Des applications gratuites permettent aux entraîneurs amateurs d’analyser les performances de leurs joueurs 
+                        (distance, tirs, zones d’action, etc.).</p>
+                    </div>
                 </div>
             </section>
             
-            <!-- Fenêtre modale pour afficher les détails rapides -->
-            <div id="project-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2 id="modal-title"></h2>
-                    <img id="modal-image" src="" alt="Aperçu du projet">
-                    <p id="modal-description"></p>
-                    <a id="modal-link" href="#" target="_blank" class="btn">Voir le site</a>
-                </div>
-            </div>
-            
         
-        
-
-
-      <!-- <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <form action="#">
-                <div class="input-group">
-                    <div class="input-box">
-                        <div class="input-field field">
-                             <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
-                        <div class="error-txt">Full Name can't be blank</div>
-                        </div>
-                        <div class="input-field field">
-                            <input type="text"placeholder="Email Address" id="email"  class="item" autocomplete="off">
-                        <div class="error-txt">Email Address can't be blank</div>
-                         </div>
-                    </div>
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
-                            <div class="error-txt">Phone Number can't be blank</div>
-                        </div>
-                        <div class="input-field field">
-                            <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
-                            <div class="error-txt">Subject can't be blank</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="input-group-2">
-                    <div class="textarea-field field">
-                         <textarea name="" id="message" cols="30"
-                         rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
-                    
-                    <div class="error-txt">Message can't be blank</div>
-                </div>
-                    <input type="submit" value="Send Message" class="btn">
-                </div>
-            </form>
-        </section>
-    -->
-  
- <!--education section design--> 
- 
  
   
 
@@ -392,26 +343,7 @@
             <div class="social">
                 
             </div>
-            <ul class="list">
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-
-                <li>
-                    <a href="#">Services</a>
-                </li>
-
-                <li>
-                    <a href="#">About Me</a>
-                </li>
-
-                
-
-                <li>
-                    <a href="#">Testimonials</a>
-                </li>
-
-            </ul>
+            
             <p class="copyright">
                 © Edy Florvil | All Right Reserved
             </p>
